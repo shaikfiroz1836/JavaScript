@@ -5,4 +5,4 @@ var person = {
     eyeColor  : "blue"
   };
 
-  document.write(person);
+  document.write(JSON.stringify(person));
