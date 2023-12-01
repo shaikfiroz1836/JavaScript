@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving License Eligibility Checker</title>
+  <script>
+    function checkEligibility() {
+      // Step a: Declare 2 variables and assign any names
+      var passengerName;
+      var passengerAge;
+
+      // Step b: Get values from text boxes and assign to variables
+      passengerName = document.getElementById('passengerNameInput').value;
+      passengerAge = parseInt(document.getElementById('passengerAgeInput').value);
+
+      // Step c: Use conditional statement to check eligibility
+      if (passengerAge >= 18) {
+        // i. If the age is greater than or equal to 18
+        alert(passengerName + ", you are eligible for a driving license");
+      } else {
+        // ii. If the age is less than 18
+        alert(passengerName + ", you are not eligible for a driving license");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Driving License Eligibility Checker</h2>
+
+  <label for="passengerNameInput">Passenger Name:</label>
+  <input type="text" id="passengerNameInput" placeholder="Enter your name">
+
+  <br>
+
+  <label for="passengerAgeInput">Passenger Age:</label>
+  <input type="number" id="passengerAgeInput" placeholder="Enter your age">
+
+  <br>
+
+  <!-- Button to trigger the eligibility check -->
+  <button onclick="checkEligibility()">Check Eligibility</button>
+
+</body>
+</html>
