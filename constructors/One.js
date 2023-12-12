@@ -16,3 +16,15 @@ console.log(a1)
 a1.deposit_Amount(50000)
 a1.get_Bal()
 console.log(a1.get_Bal())
+
+let a2 = new One(102,"Shaik");
+console.log(a2)
+a1.deposit_Amount(100000)
+a1.get_Bal()
+console.log(a1.get_Bal())
+
+let a3 = new One(102,"khaja");
+console.log(a2)
+a1.deposit_Amount(100000)
+a1.get_Bal()
+console.log(a1.get_Bal())
