@@ -9,12 +9,12 @@ class Inheri{
 class Don extends Inheri{
     acc_Dept;
     acc_Sal=0;
-    constructor(dept,sal){
-        super();
+    constructor(id,name,dept,sal){
+        super(id,name);
         this.acc_Dept=dept;
         this.acc_Sal=sal;
     }
     
 }
-a=new Don();
+a=new Don(1,"Firoz","Devlop","60000");
 console.log(a)
