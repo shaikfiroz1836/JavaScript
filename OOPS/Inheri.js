@@ -10,9 +10,11 @@ class Don extends Inheri{
     acc_Dept;
     acc_Sal=0;
     constructor(dept,sal){
+        super();
         this.acc_Dept=dept;
         this.acc_Sal=sal;
     }
-    super(){}
+    
 }
 a=new Don();
+console.log(a)
