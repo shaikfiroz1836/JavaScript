@@ -5,3 +5,4 @@ let Emp = {
 };
 
 console.log(Emp);
+document.write(JSON.stringify(Emp));
