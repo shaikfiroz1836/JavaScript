@@ -1,4 +1,4 @@
-let employee=[{"id":1,"name":"Venus","email":"vbrightwell0@sun.com","gender":"Non-binary"},
+let employees=[{"id":1,"name":"Venus","email":"vbrightwell0@sun.com","gender":"Non-binary"},
 {"id":2,"name":"Austine","email":"aheinke1@people.com.cn","gender":"Female"},
 {"id":3,"name":"Baxter","email":"bmacadam2@networkadvertising.org","gender":"Bigender"},
 {"id":4,"name":"Carlynne","email":"csharvell3@usda.gov","gender":"Female"},
@@ -98,3 +98,18 @@ let employee=[{"id":1,"name":"Venus","email":"vbrightwell0@sun.com","gender":"No
 {"id":98,"name":"Chanda","email":"cbeddall2p@sbwire.com","gender":"Polygender"},
 {"id":99,"name":"Libbey","email":"lbuscombe2q@domainmarket.com","gender":"Female"},
 {"id":100,"name":"Albert","email":"apengilly2r@shutterfly.com","gender":"Male"}]
+
+function displayEmpData(){
+    let rows=""
+    for(emp of employees){
+        rows = rows+`<tr> 
+                        <td>${emp.id}</td> 
+                        <td>${emp.name}</td>
+                        <td>${emp.email}</td>
+                        <td>${emp.gender}</td>
+                     </tr>`
+    }
+
+document.getElementById('t_Data').innerHTML =rows
+//document.getElementById('t_Data').innerHTML ="GA"
+}
