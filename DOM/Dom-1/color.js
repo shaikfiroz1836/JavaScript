@@ -1,6 +1,7 @@
 function changeColor(){
-    document.getElementById('ad').innerHTML.style.backgroundColor='yellow'
+    document.getElementById('ad').style.backgroundColor='yellow'
+    //alert("GA")
 }
 function resetColor() {
-    document.getElementById('ad').innerHTML.style.backgroundColor='black'
+    document.getElementById('ad').style.backgroundColor='green'
 }
