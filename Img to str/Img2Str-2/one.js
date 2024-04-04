@@ -8,6 +8,7 @@ function ImgStr(){
         console.log(reader.result)
         TA.innerText=reader.result;
         globalStr=reader.result;
+        console.log(reader.result)
     })
 }
 
@@ -17,6 +18,5 @@ function Image(){
     // alert('GN')
     let ImgRef = document.getElementById('xyz')
     ImgRef.innerHTML=globalStr;
-    globalStr=reader.result;
 
 }
